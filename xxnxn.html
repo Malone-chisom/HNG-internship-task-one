@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Career Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar" data-testid="navbar">
+        <ul>
+            <li><a href="#about" data-testid="nav-about">About Me</a></li>
+            <li><a href="#goals" data-testid="nav-goals">My Goals</a></li>
+            <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section" data-testid="section-about">
+        <h1>About Me</h1>
+        <p data-testid="about-description">Hi, I'm [Your Name]. I'm passionate about technology and web development.</p>
+        <div class="circle" data-testid="circle">
+            <img src="your-image-url.jpg" alt="Circle Image" class="circle-img" width="300" height="300"
+                data-testid="circle-img">
+        </div>
+        <button class="slack-info-btn" data-testid="slack-info-btn">View Slack Information</button>
+        <div class="slack-info" data-testid="slack-info">
+            <ul>
+                <li data-testid="slack-name">Slack Name: Chisom</li>
+                <li data-testid="utc-time">Current Time in UTC: <span id="utc-time"></span></li>
+                <li data-testid="day-of-week">Current Day of the Week: <span id="day-of-week"></span></li>
+                <li data-testid="slack-email">Slack Email: your-email@example.com</li>
+                <li><a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
+                <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="goals" class="section" data-testid="section-goals">
+        <h2>My Goals</h2>
+        <ul data-testid="goals-list">
+            <li data-testid="goal-1">Gain hands-on experience through internships.</li>
+            <li data-testid="goal-2">Work on real-life projects to enhance my skills.</li>
+            <li data-testid="goal-3">Secure a full-time job in a reputable tech company.</li>
+            <li data-testid="goal-4">Continuously learn and improve my knowledge in web development and other tech
+                areas.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section" data-testid="section-contact">
+        <h2>Contact Me</h2>
+        <p data-testid="contact-info">You can reach me at: your-email@example.com</p>
+    </section>
+
+    <footer class="footer" data-testid="footer">
+        <hr class="footer-line" data-testid="footer-line">
+        <p data-testid="footer-copyright">&copy; <span id="current-year" data-testid="current-year"></span> [Your Name].
+            All rights reserved.</p>
+        <ul class="social-links" data-testid="social-links">
+            <li><a href="#" data-testid="footer-linkedin">LinkedIn</a></li>
+            <li><a href="#" data-testid="footer-github">GitHub</a></li>
+            <li><a href="#" data-testid="footer-twitter">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

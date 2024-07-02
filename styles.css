@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: clamp(16px, 2vw, 24px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    background-color: #f0f2f5;
+}
+
+/* h1 {
+    font-size: clamp(24px, 4vw, 36px);
+}
+
+p {
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+title {
+    border: none;
+    background: none;
+    color: red;
+} */
+
+.navbar {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0 10vw;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    /* padding: 0 60px; */
+}
+
+.navbar h1 {
+    color: #FF6347;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    display: block;
+}
+
+
+
+
+.open-icon {
+    right: 20px;
+}
+
+
+/* .navbar .hamburger {
+    display: none;
+} */
+
+
+
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+#mobileMenu {
+    display: none;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    padding: 5vw 10vw;
+    transition: 0.15s ease-in-out;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#mobileMenu.active {
+    display: block;
+    transition: 0.15s ease-in-out;
+}
+
+
+.mobileMenu.active {
+    display: block;
+    background-color: black;
+    transition: 0.15s ease-in-out;
+    /* Display when active */
+}
+
+.icon-open {
+    cursor: pointer;
+    /* Make the icon clickable */
+}
+
+
+
+.section {
+    padding: 60px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slack-info-btn {
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #FF6347, #FFFF99);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .slack-info {
+    display: none;
+    opacity: 0;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#goals {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#goals ul li {
+    box-shadow: 0 2px 8px black;
+
+    background-color: black;
+    color: white;
+    padding: 50px 1vw;
+    width: 30vw;
+    min-width: 270px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#goals ul li:last-child {
+    margin-bottom: 0;
+}
+
+#goals ul div {
+    font-size: max(5vw, 50px);
+    margin-bottom: max(2vw, 10px);
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-line {
+    width: 80%;
+    margin: 0 auto 20px;
+    border: 1px solid #575757;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block;
+    }
+
+
+
+    .navbar ul {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .footer-line {
+        width: 90%;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-Menu {}
+}
