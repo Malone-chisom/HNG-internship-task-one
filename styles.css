@@ -93,6 +93,7 @@ title {
     width: 100%;
     padding: 5vw 10vw;
     transition: 0.15s ease-in-out;
+    position: fixed;
 }
 
 #menuToggle {
@@ -110,6 +111,7 @@ title {
     background-color: black;
     transition: 0.15s ease-in-out;
     /* Display when active */
+    position: fixed;
 }
 
 .icon-open {
