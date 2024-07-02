@@ -125,6 +125,16 @@ title {
     animation: fadeIn 1s ease-in;
 }
 
+.time-div {
+    margin-top: 40px;
+}
+
+#utc-time {
+
+    color: red;
+    margin-right: 20px;
+}
+
 .circle {
     width: 150px;
     height: 150px;
@@ -135,7 +145,7 @@ title {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .circle-img {
