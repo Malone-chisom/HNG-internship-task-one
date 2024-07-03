@@ -82,15 +82,15 @@
 </head>
 
 <body>
-    <nav class="navbar" data-testid="navbar">
+    <nav class="navbar">
         <div>
             <h1>Mr Chisom</h1>
         </div>
         <div>
             <ul>
-                <li><a href="#about" data-testid="nav-about">About Me</a></li>
-                <li><a href="#goals" data-testid="nav-goals">My Goals</a></li>
-                <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#goals">My Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times " id=""> </i>
             </ul>
 
@@ -101,36 +101,33 @@
     </nav>
     <div id="mobileMenu">
         <ul>
-            <li><a href="#about" data-testid="nav-about">About Me</a></li>
-            <li><a href="#goals" data-testid="nav-goals">My Goals</a></li>
-            <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#goals">My Goals</a></li>
+            <li><a href="#contact">Contact</a></li>
             <!-- <i class="fas fa-times close-icon" id="close-menu"> X</i> -->
         </ul>
     </div>
 
-    <section id="about" class="section" data-testid="section-about">
+    <section id="about" class="section">
         <h1>About Me</h1>
-        <p data-testid="about-description">Hi, I'm chisom. I'm passionate about technology and web development.</p>
+        <p>Hi, I'm chisom. I'm passionate about technology and web development.</p>
         <div class="time-div">
             <i class="fas fa-clock"></i>
-            <span id="utc-time"></span>
+            <span data-testid="currentTimeUTC" id="utc-time"></span>
             <i class="fas fa-calendar-alt"></i>`
-            <span id="day-of-week"></span>
+            <span data-testid="currentDay" id="day-of-week"></span>
         </div>
-        <div class="circle" data-testid="circle" title="profile picture">
-            <img src="pic2.jpg" alt="Circle Image" class="circle-img" width="300" height="300"
-                data-testid="slackProfilePicture">
+        <div class="circle" title="profile picture">
+            <img src="pic2.jpg" alt="Circle Image" class="circle-img" data-testid="slackProfilePicture">
         </div>
-        <button class="slack-info-btn" data-testid="slack-info-btn" onclick="toggleSlackInfo()">
+        <button class="slack-info-btn" onclick="toggleSlackInfo()">
             <h2>View Slack
                 Information</h2>
         </button>
-        <div class="slack-info" data-testid="slack-info">
+        <div class="slack-info">
             <ul>
-                <li data-testid="slack-name">Slack Name: Chisom</li>
-                <!-- <li data-testid="utc-time">Current Time in UTC: <span id="utc-time"></span></li>
-                <li data-testid="day-of-week">Current Day of the Week: <span id="day-of-week"></span></li>
-                <li data-testid="slack-email"><span class="icon">✉️</span>Slack Email: Johnsonmalone007@gmail.com</li> -->
+                <li data-testid="slackName">slack name: Chisom Johns </li>
+                <li data-testid="slackDisplayName">Slack display name: Chisom</li>
                 <li><a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
                 <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
                 <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
@@ -138,25 +135,25 @@
         </div>
     </section>
 
-    <section id="goals" class="section" data-testid="section-goals">
+    <section id="goals" class="section">
         <h2>My goals got the next 2 years</h2>
-        <ul data-testid="goals-list">
-            <li data-testid="goal-1">
+        <ul>
+            <li>
                 <div><i class="fas fa-tools"></i></div>
                 Gain hands-on experience through internships.
             </li>
-            <li data-testid="goal-2">
+            <li>
                 <div><i class="fas fa-project-diagram"></i>
                 </div>
                 Work on real-life projects to enhance my skills.
             </li>
-            <li data-testid="goal-3">
+            <li>
                 <div>
                     <i class="fas fa-briefcase"></i>
                 </div>
                 Secure a full-time job in a reputable tech company.
             </li>
-            <li data-testid="goal-4">
+            <li>
                 <div>
                     <i class="fas fa-graduation-cap"></i>
                 </div>
@@ -166,21 +163,20 @@
         </ul>
     </section>
 
-    <section id="contact" class="section" data-testid="section-contact">
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p data-testid="contact-info">You can reach me at: Johnsonmalone007@gmail.com <span class="icon">✉️</span></p>
+        <p data-testid="slackEmail">You can reach me at: Johnsonmalone007@gmail.com <span class="icon">✉️</span></p>
     </section>
 
-    <footer class="footer" data-testid="footer">
-        <hr class="footer-line" data-testid="footer-line">
-        <p data-testid="footer-copyright">&copy; <span id="current-year" data-testid="current-year"></span> Chisom
+    <footer class="footer">
+        <hr class="footer-line">
+        <p>&copy; <span id="current-year"></span> Chisom
             Johnson.
             All rights reserved.</p>
-        <ul class="social-links" data-testid="social-links">
-            <li><a href="https://www.linkedin.com/in/johnson-chisom-2a33b6279?"
-                    data-testid="footer-linkedin">LinkedIn</a></li>
-            <li><a href="https://github.com/Malone-chisom" data-testid="footer-github">GitHub</a></li>
-            <li><a href="https://x.com/JohnsonMalone5" data-testid="footer-twitter">Twitter</a></li>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/johnson-chisom-2a33b6279?">LinkedIn</a></li>
+            <li><a href="https://github.com/Malone-chisom">GitHub</a></li>
+            <li><a href="https://x.com/JohnsonMalone5">Twitter</a></li>
         </ul>
     </footer>
 
